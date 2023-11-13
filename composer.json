@@ -1,0 +1,14 @@
+{
+    "name": "mri/scout-plus",
+    "description": "This package adds enhanced functionalities to the Laravel Scout package.",
+    "require": {
+        "laravel/scout": "^10.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohammad Rakibul Islam",
+            "email": "mricoder@gmail.com"
+        }
+    ]
+}
