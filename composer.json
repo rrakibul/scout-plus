@@ -5,6 +5,18 @@
         "laravel/scout": "^10.5"
     },
     "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mri\\ScoutPlus\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mri\\ScoutPlus\\ScoutPlusServiceProvider"
+            ]
+        }
+    },
     "authors": [
         {
             "name": "Mohammad Rakibul Islam",
