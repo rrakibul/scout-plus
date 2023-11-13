@@ -26,5 +26,18 @@ class BuilderExtended extends Builder
      */
     public $whereBetween = [];
 
-    
+    /**
+     * Add a "TO" constraint to the search query.
+     *
+     * @param  string  $field
+     * @param  array  $values
+     * @return $this
+     */
+    public function whereBetween($field, array $values)
+    {
+        $this->whereBetween[$field] = $values;
+
+        return $this;
+    }
+
 }
