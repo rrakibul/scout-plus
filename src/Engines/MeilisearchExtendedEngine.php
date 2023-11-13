@@ -6,7 +6,7 @@ use Laravel\Scout\Builder;
 use Laravel\Scout\Engines\MeilisearchEngine;
 use Meilisearch\Client as MeilisearchClient;
 
-class MeilisearchExtendEngine extends MeilisearchEngine
+class MeilisearchExtendedEngine extends MeilisearchEngine
 {
     public function __construct(MeilisearchClient $meilisearch, $softDelete = false)
     {
