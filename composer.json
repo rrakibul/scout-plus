@@ -2,6 +2,8 @@
     "name": "mri/scout-plus",
     "description": "This package adds enhanced functionalities to the Laravel Scout package.",
     "require": {
+        "php": "^8.0",
+        "illuminate/support": "^9.0|^10.0",
         "laravel/scout": "^10.5"
     },
     "license": "MIT",
