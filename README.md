@@ -1,4 +1,4 @@
-<h2 align="center">Scout Plus</h2>
+<h1 align="center">Scout Plus</h1>
 
 ## Introduction
 
@@ -28,11 +28,10 @@ Documentation for Scout can be found on the [Laravel website](https://laravel.co
 
 Please follow the Scout documentation for development instructions. 
 
-# Additional usages are given below that will support this package as well.
+### Additional usages are given below that will support this package as well.
 
 ````
 Document::search($q)->whereBetween('updated_at_timestamp', [$from, $to])
-
 ````
 
 Now `where` clause will accept three parameters: [field], [operator], [value].
