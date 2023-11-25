@@ -28,27 +28,25 @@ Documentation for Scout can be found on the [Laravel website](https://laravel.co
 
 Please follow the Scout documentation for development instructions. 
 
-Additional usages that not in scout documentation.
+# Additional usages are given below that will support this package as well.
 
 ````
-Document::search($q)
-                ->whereBetween('updated_at_timestamp', [$from, $to])
+Document::search($q)->whereBetween('updated_at_timestamp', [$from, $to])
 
 ````
 
-Now `where` clause will accept three parameters: [field], [operator], [value]
+Now `where` clause will accept three parameters: [field], [operator], [value].
+
 Supported operators: ` = , !=, >, <, >=, <= `
 
 ````
-Order::search($q)
-                ->where('amount', '>' 100)
+Order::search($q)->where('amount', '>' 100)
 ````
 
 ````
 // In case you ommit the operator parameter, this package will assume the operator is `=`.   
 
-Order::search($q)
-                ->where('amount', 100)
+Order::search($q)->where('amount', 100)
 ````
 
 Note: Currently, the above operations will work only for meilisearch driver.
